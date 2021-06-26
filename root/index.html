@@ -23,10 +23,129 @@
     <script src="https://kit.fontawesome.com/b129219756.js" crossorigin="anonymous"></script>
     <!-- CSS Stylesheet-->
     <link rel="stylesheet" href="style/style.css" />
-    
+
     <title>Personal Portfolio Page</title>
 </head>
 
-<body></body>
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <!--Brand-->
+            <a href="#" class="navbar-brand">My Portfolio</a>
+            <!--Toggler-->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav"
+                aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span></button>
+            <!--Collapsible Menu-->
+            <div id="myNav" class="collapse navbar-collapse">
+                <ul class="nav nav-pills flex-md-row flex-column me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a href="#welcome-section" class="nav-link"><i class="fab fa-atlassian"></i> About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work" class="nav-link"><i class="fas fa-briefcase"></i> Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-section" class="nav-link"><i class="fas fa-address-card"></i> Contact</a>
+                    </li>
+                </ul>
+                <form action="#" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <!--Main Part-->
+        <div class="main-part">
+            <section id="welcome-section" class="d-flex flex-column justify-content-center">
+                <h1 class="align-self-center">Hi, I am Abdulaziz Musaev</h1>
+            </section>
+            <section id="work">
+                <div class="container border-3">
+                    <h1>My <a id="rwd" href="#" data-bs-toggle="tooltip" data-bs-placement="top"
+                            title="Responsive Web Design">RWD</a> Projects</h1>
+                    <div class="project-tile row row-cols-1 row-cols-md-2 g-4">
+                        <!--Card 1-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-primary h-100">
+                                <img class="card-img-top" src="images/card1.png" alt="doc-page">
+                                <div class="card-body">
+                                    <h4 class="card-title">Documentation Page</h4>
+                                    <p class="card-text">FreeCodeCamp Technical Documentation Page project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-doc-page.netlify.app/" class="btn btn-dark stretched-link"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i> Visit to see
+                                        this project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card 2-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-danger h-100">
+                                <img class="card-img-top" src="images/card2.png" alt="tesla">
+                                <div class="card-body">
+                                    <h4 class="card-title">Landing Page</h4>
+                                    <p class="card-text">FreeCodeCamp Product Landing Page project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-tesla.netlify.app/" class="btn btn-dark stretched-link"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i> Visit to see this
+                                        project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card 3-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-warning h-100">
+                                <img class="card-img-top" src="images/card3.png" alt="test-form">
+                                <div class="card-body">
+                                    <h4 class="card-title">Survey Form</h4>
+                                    <p class="card-text">FreeCodeCamp Survey Form project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-test-form.netlify.app/"
+                                        class="btn btn-dark stretched-link" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i> Visit to see this project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card 4-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-success h-100">
+                                <img class="card-img-top" src="images/card4.png" alt="tribute-page">
+                                <div class="card-body">
+                                    <h4 class="card-title">Tribute Page</h4>
+                                    <p class="card-text">FreeCodeCamp Tribute Page project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-tribute-page.netlify.app/"
+                                        class="btn btn-dark stretched-link" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i> Visit to see this project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="contact-section">
+                <a id="profile-link" href="https://github.com/swiftv99"><i class="fab fa-github"></i> GitHub</a>
+                <a id="contact-link2" href="https://www.freecodecamp.org/abdulaziz-musaev"><i
+                        class="fab fa-free-code-camp"></i> FreeCodeCamp</a>
+                <a id="profile-link3" href="https://www.linkedin.com/in/abdulaziz-musaev"><i
+                        class="fab fa-linkedin"></i> LinkedIn</a>
+                <a id="profile-link4" href="mailto:swiftv99@gmail.com"><i class="far fa-envelope-open"></i> Email</a>
+                <a id="profile-link5" href="https://t.me/a_musaev"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                <a id="profile-link6" href="tel:998915893205"><i class="fas fa-phone-alt"></i> Phone</a>
+            </section>
+        </div>
+
+    </div>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
 
 </html>
