@@ -1,6 +1,10 @@
 :root {
+	/*  Body  */
 	--color-white: #ffffff;
 	--color-black: #000000;
+	--body-postition: relative;
+	--body-text-align: center;
+	--main-part-height: 100vh;
 	/*	Navbar Style	*/
 	--navbar-bg: #0e6ba8;
 	--navbar-active-link-bg: #d00000;
@@ -12,20 +16,22 @@
 	--text-stroke-width: 2px;
 	--animation-opacity1: 1;
 	--animation-opacity2: 0.5;
+	--animation-duration: 0s;
+	/*  Main Section 3  */
+	--section3-bg-color: #172a3a;
 }
 @import "navbar";
 @import "section1";
 @import "section3";
 
 body {
-	position: relative;
-	text-align: center;
+	position: var(--body-postition);
+	text-align: var(--body-text-align);
 }
-
 /*	Main Part Style  */
 #contact-section,
 #welcome-section {
-	height: 100vh;
+	height: var(--main-part-height);
 }
 a:link {
 	color: var(--color-black);
