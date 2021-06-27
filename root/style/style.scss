@@ -37,7 +37,11 @@ body {
 .row {
 	font-family: var(--main-font-family);
 }
-#contact-section,
 #welcome-section {
 	height: var(--main-part-height);
+}
+@media only screen and (min-width: 768px) {
+	#contact-section {
+		height: var(--main-part-height);
+	}
 }
