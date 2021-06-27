@@ -2,6 +2,10 @@
 .navbar {
 	color: var(--navbar-bg);
 	background-color: var(--navbar-bg);
+	a:hover {
+		color: var(--color-white);
+		font-weight: var(--navbar-font-weight);
+	}
 }
 .navbar-brand,
 .nav-link {
