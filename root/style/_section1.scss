@@ -1,0 +1,29 @@
+/*    Animation Code	*/
+@keyframes anim {
+	0% {
+		color: var(--color-white);
+		background-color: var(--section1-bg-color);
+	}
+	25% {
+		opacity: 0.5;
+	}
+	50% {
+		color: var(--section1-bg-color);
+		background-color: var(--color-white);
+	}
+	75% {
+		opacity: 0.5;
+	}
+	100% {
+		color: var(--color-white);
+		background-color: var(--section1-bg-color);
+	}
+}
+
+/* The element to apply the animation to */
+#welcome-section {
+	color: var(--color-white);
+	background-color: var(--section1-bg-color);
+	animation-name: anim;
+	animation-duration: 4s;
+}

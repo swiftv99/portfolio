@@ -27,45 +27,53 @@
     <title>Personal Portfolio Page</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" class="scrollspy-example" tabindex="0">
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
             <!--Brand-->
-            <a href="#" class="navbar-brand">My Portfolio</a>
+            <a href="#" class="navbar-brand text-white">My Portfolio</a>
             <!--Toggler-->
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav"
-                aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span></button>
+                aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation"><i
+                    class="fas fa-bars"></i></button>
+            <!--<span class="navbar-toggler-icon text-white "></span>-->
             <!--Collapsible Menu-->
             <div id="myNav" class="collapse navbar-collapse">
-                <ul class="nav nav-pills flex-md-row flex-column me-auto mb-2 mb-md-0">
+                <ul class="nav nav-pills flex-md-row flex-column me-auto my-md-0 my-2">
                     <li class="nav-item">
-                        <a href="#welcome-section" class="nav-link"><i class="fab fa-atlassian"></i> About</a>
+                        <a href="#welcome-section" class="nav-link text-white"><i class="fab fa-atlassian"></i>
+                            About</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#work" class="nav-link"><i class="fas fa-briefcase"></i> Work</a>
+                        <a href="#work-section" class="nav-link text-white"><i class="fas fa-briefcase"></i> Work</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#contact-section" class="nav-link"><i class="fas fa-address-card"></i> Contact</a>
+                        <a href="#contact-section" class="nav-link text-white"><i class="fas fa-address-card"></i>
+                            Contact</a>
                     </li>
                 </ul>
                 <form action="#" class="d-flex">
                     <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
-                    <button type="submit" class="btn btn-outline-dark">Submit</button>
+                    <button type="submit" class="btn btn-danger">Submit</button>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div>
         <!--Main Part-->
         <div class="main-part">
-            <section id="welcome-section" class="d-flex flex-column justify-content-center">
-                <h1 class="align-self-center">Hi, I am Abdulaziz Musaev</h1>
+            <section id="welcome-section">
+                <div class="cover-container d-flex flex-column w-100 h-100 mx-auto">
+                    <main class="m-auto">
+                        <h1>Hi, I am Abdulaziz Musaev</h1>
+                        <p class="lead">a web developer</p>
+                    </main>
+                </div>
             </section>
-            <section id="work">
+            <section id="work-section">
                 <div class="container border-3">
-                    <h1>My <a id="rwd" href="#" data-bs-toggle="tooltip" data-bs-placement="top"
-                            title="Responsive Web Design">RWD</a> Projects</h1>
+                    <h1 class="text-center m-5"><u>My <a id="rwd" href="#" data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Responsive Web Design">RWD</a> Projects</u></h1>
                     <div class="project-tile row row-cols-1 row-cols-md-2 g-4">
                         <!--Card 1-->
                         <div class="col my-2 my-md-3">

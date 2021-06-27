@@ -1,0 +1,18 @@
+/*	Navbar Style	*/
+.navbar {
+	color: var(--navbar-bg);
+	background-color: var(--navbar-bg);
+}
+.navbar-brand,
+.nav-link {
+	color: var(--color-white);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+	color: var(--color-white);
+	background-color: var(--navbar-active-link-bg);
+}
+.btn-danger {
+	background-color: var(--btn-danger-bg);
+	border-color: var(--btn-danger-border);
+}
