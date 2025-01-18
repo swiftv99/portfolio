@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap 5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap 5.0.2 Icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!--Popper plug-in-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <!--JavaScript plug-in-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/b129219756.js" crossorigin="anonymous"></script>
+    <!--Google Fonts N1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merienda&display=swap">
+    <!--Google Fonts N2-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato&display=swap">
+    <!-- CSS Stylesheet-->
+    <link rel="stylesheet" href="style/style.css" />
+
+    <title>Personal Portfolio Page</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100" class="scrollspy-example" tabindex="0">
+    <nav id="navbar" class="navbar navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <!--Brand-->
+            <a href="#" class="navbar-brand text-white">My Portfolio</a>
+            <!--Toggler-->
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#myNav"
+                aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation"><i
+                    class="fas fa-bars"></i></button>
+            <!--<span class="navbar-toggler-icon text-white "></span>-->
+            <!--Collapsible Menu-->
+            <div id="myNav" class="collapse navbar-collapse">
+                <ul class="nav nav-pills flex-md-row flex-column me-auto my-md-0 my-2">
+                    <li class="nav-item">
+                        <a href="#welcome-section" class="nav-link text-white"><i class="fab fa-atlassian"></i>
+                            About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#work-section" class="nav-link text-white"><i class="fas fa-briefcase"></i> Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-section" class="nav-link text-white"><i class="fas fa-address-card"></i>
+                            Contact</a>
+                    </li>
+                </ul>
+                <form action="#" class="d-flex">
+                    <input type="search" class="form-control me-2" placeholder="Search" aria-label="Search">
+                    <button type="submit" class="btn btn-danger">Submit</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <!--Main Part-->
+        <div class="main-part">
+            <section id="welcome-section">
+                <div class="cover-container d-flex flex-column w-100 h-100 mx-auto">
+                    <main class="m-auto">
+                        <h1 class="display-4"><b>Hi, I am Abdulaziz Musaev</b></h1>
+                        <p class="lead display-6"><b>a web developer</b></p>
+                    </main>
+                </div>
+            </section>
+            <section id="work-section">
+                <div class="container my-4">
+                    <h1 class="rwd text-center mb-5"><u><a id="rwd" href="#" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" title="Responsive Web Design">My RWD Projects</a></u></h1>
+                    <div class="project-tile row row-cols-1 row-cols-md-2 g-4">
+                        <!--Card 1-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-primary h-100">
+                                <img class="card-img-top" src="images/card1.png" alt="doc-page">
+                                <div class="card-body">
+                                    <h4 class="card-title">Documentation Page</h4>
+                                    <p class="card-text">FreeCodeCamp Technical Documentation Page project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-doc-page.netlify.app/" class="btn btn-dark stretched-link"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i> Visit to see
+                                        this project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card 2-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-danger h-100">
+                                <img class="card-img-top" src="images/card2.png" alt="tesla">
+                                <div class="card-body">
+                                    <h4 class="card-title">Landing Page</h4>
+                                    <p class="card-text">FreeCodeCamp Product Landing Page project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-tesla.netlify.app/" class="btn btn-dark stretched-link"
+                                        target="_blank"><i class="fas fa-external-link-alt"></i> Visit to see this
+                                        project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card 3-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-warning h-100">
+                                <img class="card-img-top" src="images/card3.png" alt="test-form">
+                                <div class="card-body">
+                                    <h4 class="card-title">Survey Form</h4>
+                                    <p class="card-text">FreeCodeCamp Survey Form project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-test-form.netlify.app/"
+                                        class="btn btn-dark stretched-link" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i> Visit to see this project</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Card 4-->
+                        <div class="col my-2 my-md-3">
+                            <div class="card text-center text-white bg-success h-100">
+                                <img class="card-img-top" src="images/card4.png" alt="tribute-page">
+                                <div class="card-body">
+                                    <h4 class="card-title">Tribute Page</h4>
+                                    <p class="card-text">FreeCodeCamp Tribute Page project in
+                                        Responsive Web Design</p>
+                                    <a href="https://swiftv99-tribute-page.netlify.app/"
+                                        class="btn btn-dark stretched-link" target="_blank"><i
+                                            class="fas fa-external-link-alt"></i> Visit to see this project</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+            <section id="contact-section">
+                <div class="container w-100 h-100 mx-auto d-flex flex-column text-white">
+                    <div class="w-100 mt-5 pt-md-5">
+                        <h2 class="mt-md-5 pt-md-5 display-6"><b>If you have any questions, please contact me</b></h2>
+                        <h4>The below are my social network accounts</h4>
+                        <p>If you have any thoughts regarding this project,<br>
+                            feel free to tell me about it
+                        </p>
+                    </div>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 m-auto w-100">
+                        <div class="cols my-1 my-md-2 py-2 d-grid gap-2">
+                            <a id="profile-link" href="https://github.com/swiftv99" class="btn btn-info btn-lg"
+                                target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                        <div class="cols my-1 my-md-2 py-2 d-grid gap-2">
+                            <a id="contact-link2" href="https://www.freecodecamp.org/abdulaziz-musaev"
+                                class="btn btn-success btn-lg" target="_blank"><i class="fab fa-free-code-camp"></i>
+                                FreeCodeCamp</a>
+                        </div>
+                        <div class="cols my-1 my-md-2 py-2 d-grid gap-2">
+                            <a id="profile-link3" href="https://www.linkedin.com/in/amusaev"
+                                class="btn btn-light btn-lg" target="_blank"><i class="fab fa-linkedin"></i>
+                                LinkedIn</a>
+                        </div>
+                        <div class="cols my-1 my-md-2 py-2 d-grid gap-2">
+                            <a id="profile-link4" href="mailto:swiftv99@gmail.com" class="btn btn-warning btn-lg"
+                                target="_blank"><i class="far fa-envelope-open"></i> Email</a>
+                        </div>
+                        <div class="cols my-1 my-md-2 py-2 d-grid gap-2">
+                            <a id="profile-link5" href="https://telegram.org/" class="btn btn-primary btn-lg"
+                                target="_blank"><i class="fab fa-telegram-plane"></i> Telegram</a>
+                        </div>
+                        <div class="cols my-1 my-md-2 py-2 d-grid gap-2">
+                            <a id="profile-link6" href="#" class="btn btn-danger btn-lg"
+                                target="_blank"><i class="fas fa-phone-alt"></i> Phone</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
